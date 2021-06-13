@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="LogsToDD">
+    <DisplayName>LogToDatadog</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="myRequest">
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+        <Set>
+            <Payload contentType="application/json" variablePrefix="%" variableSuffix="#">
+                {"host":"apigee", "service":"Troy", "message":"Hello World!", "trace_id":"%messageid#", "custom":"delete", "status":"error"}
+            </Payload>
+            <Path>v1/input/6a14bbf612d53565c62b8cc4753b3e8c</Path>
+            <Verb>POST</Verb>
+        </Set>
+    </Request>
+    <Response>calloutResponse</Response>
+    <HTTPTargetConnection>
+        <Properties/>
+        <URL>https://http-intake.logs.datadoghq.com</URL>
+    </HTTPTargetConnection>
+</ServiceCallout>

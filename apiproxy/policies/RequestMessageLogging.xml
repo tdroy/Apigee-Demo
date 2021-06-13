@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessageLogging async="true" continueOnError="false" enabled="true" name="RequestMessageLogging">
+    <DisplayName>RequestMessageLogging</DisplayName>
+    <Syslog>
+        <Message>API.Name = {apiproxy.name}, Request.Message.id = {messageid}</Message>
+        <Host>4.tcp.ngrok.io</Host>
+        <Port>15815</Port>
+        <Protocol>TCP</Protocol>
+    </Syslog>
+</MessageLogging>
