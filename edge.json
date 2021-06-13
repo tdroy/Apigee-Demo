@@ -2,7 +2,14 @@
    "version":"1.0",
    "envConfig":{
       "test":{
-         
       }
-   }
+   },
+   "orgConfig":{
+      "specs":[
+         {
+            "name":"Petstore-v2",
+            "file":"./specs/Demo-test.yaml"
+         }
+      ]
+	}
 }
