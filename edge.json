@@ -7,7 +7,7 @@
    "orgConfig":{
       "specs":[
          {
-            "name":"Petstore-v2",
+            "name":"Demo-Test",
             "file":"./specs/Demo-test.yaml"
          }
       ]
